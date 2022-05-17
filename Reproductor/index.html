@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/estilos.css" />
+    <script
+      src="https://kit.fontawesome.com/5698b9e6da.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Reproductor</title>
+  </head>
+  <body>
+    <div class="container bg-principal">
+      <div class="card">
+        <div class="row card-header">
+          <div class="col-2">
+            <h3 class="logo"><i class="fa-solid fa-music"></i></h3>
+          </div>
+          <div class="col-2 carga">
+            <label for="files" class="carga"
+              ><i class="fa-solid fa-file-arrow-up"></i
+            ></label>
+            <input type="file" id="files" name="files[]" multiple />
+          </div>
+        </div>
+        <div class="card-contend">
+          <div class="card-image">
+            <img
+              src="https://wc.wallpaperuse.com/wallp/59-594800_s.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <h3 class="texto-secundario">Nombre:</h3>
+          </div>
+          <div class="col-2">
+            <h4 class="texto-texto" id="name-music">Nombre Canción</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <h2 class="control atras"><i class="fa-solid fa-backward-step"></i></h2>
+          </div>
+          <div class="col-4">
+            <h2 class="control play"><i class="fa-solid fa-play"></i></h2>
+          </div>
+          <div class="col-4">
+            <h2 class="control pause"><i class="fa-solid fa-pause"></i></h2>
+          </div>
+          <div class="col-4">
+            <h2 class="control siguiente"><i class="fa-solid fa-forward-step"></i></h2>
+          </div>
+          <div id="musica-temporal"></div>
+        </div>
+        <h4 class="texto-secundario">Lista de Musica</h4>
+        <div class="row">
+            <ul id="lista-musica">
+            
+            </ul>
+        </div>
+      </div>
+    </div>
+    <script src="/js/app.js" type="module"></script>
+  </body>
+</html>

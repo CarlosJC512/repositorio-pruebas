@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>JQuery Validate</title>
+</head>
+<body>
+    <div id="container">
+        <form action="" id="miFormulario">
+            <label>Nombre:</label><br />
+            <input type="text" id="itNombre" class="campo"> <br />
+            <div id="mensaje1" class="errores">Dame tu Nombre</div>
+
+            <label>Correo Electonico:</label><br />
+            <input type="email" id="itMail" class="campo"><br />
+            <div id="mensaje2" class="errores">Dame una dirección de correo valida</div>
+        
+            <label>Reseña del curso:</label><br />
+            <input type="text" id="itAsunto" class="campo"><br />
+            <div id="mensaje3" class="errores">Motivo</div>
+
+            <label>¿Que te parecio el curso?</label> <br />
+            <input type="radio" name="gusto" value="regular" />Regular<br />
+            <input type="radio" name="gusto" value="bueno" />Bueno<br />
+            <input type="radio" name="gusto" value="excelente" />Excelente<br />
+            <div id="mensaje4" class="errores">Escoge una opción</div>
+
+            <label>¿Que temas te gustaron más?</label><br />
+            <input type="checkbox" name="temas" value="html5" />HTML5<br />
+            <input type="checkbox" name="temas" value="css3" />CSS3<br />
+            <input type="checkbox" name="temas" value="jquery" />JQuery<br />
+            <div id="mensaje5" class="errores">Escoje al menos un tema</div>
+
+            <label>¿Dónde tomaste el curso?</label><br />
+            <select name="lugar" id="lugar">
+                <option value="" selected></option>
+                <option value="mexico">México</option>
+                <option value="eu">Estados Unidos</option>
+                <option value="canada">Canadá</option>
+            </select><br />
+            <div id="mensaje" class="errores">Selecciona un país</div>
+
+
+            <input type="submit" id="bEnviar" value="Enviar" class="boton" />
+        </form>
+    </div>
+
+
+    <script
+			  src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>

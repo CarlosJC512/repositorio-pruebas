@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');
+:root{
+    --font-principal: 'Charm', cursive;
+    --principal: linear-gradient(rgb(29, 24, 95), rgb(51, 97, 95));
+    --secundario: rgba(101,180,194,0.972);
+    --texto: rgba(240,251,252,0.801);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-principal);
+}
+
+.bg-principal{
+    background: var(--principal);
+}
+.bg-secundario{
+    background: var(--secundario);
+}
+.texto-texto{
+    color: var(--texto);
+}
+
+.texto-secundario{
+    color: var(--secundario);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-2,.col-3,.col-4{
+    padding: 10px;
+}
+
+.col-2{
+    flex: 1 0 calc(50% - 10px);
+}
+
+.col-3{
+    flex: 1 0 calc(33.3% - 10px);
+}
+
+.col-4{
+    flex: 1 0 calc(25% - 10px);
+}
+
+.card{
+    width: 92%;
+    height: 92%;
+    border-radius: .5rem;
+    border: solid .5px var(--texto);
+    overflow-y: scroll;
+}
+.logo{
+    font-size: 30px;
+    color: var(--secundario);
+}
+.carga{
+    font-size: 30px;
+    color: var(--secundario);
+    text-align: right;
+}
+#files{
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.card-header{
+    border-bottom: solid .5px var(--secundario);
+}
+.card-contend{
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+.card-image img{
+    width: 96%;
+    display: block;
+    margin: auto auto;
+}
+.control{
+    font-size: 50px;
+    text-align: center;
+    color: var(--secundario);
+    cursor: pointer;
+}
+#lista-musica{
+    color: var(--texto);
+    list-style: none;
+    margin-top: 10px;
+    width: 100%;
+}
+.list-item{
+    padding: 10px;
+    border-top: solid .3px var(--texto);
+}
+#name-music{
+    font-size: 15px;
+
+}
+@media screen and (min-width: 450px){
+    .card{
+        width: 40%;
+    }
+    .card-image img{
+        width: 70%;
+    }
+}

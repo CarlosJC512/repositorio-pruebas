@@ -1,0 +1,93 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: rgb(218, 218, 218);
+}
+
+.header {
+  text-align: center;
+  color: darkgray;
+  background: #333;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+}
+
+.main {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+#formulario {
+  padding: 20px;
+  background-color: #333;
+  border-radius: 30px;
+  border: 4px rgb(88, 88, 88) solid;
+}
+label {
+    color: #DDD;
+    font-size: 3vh;
+    font-weight: bold;
+}
+select{
+    background-color: rgb(194, 194, 194);
+    padding: 7px;
+    border-radius: 15px;
+    font-size: 2vh;
+    font-weight: bolder;
+}
+input{
+    background-color: rgb(189, 189, 189);
+    padding: 7px;
+    border-radius: 15px;
+    padding-left: 10px;
+    font-weight: lighter;
+}
+
+.boton {
+  background: #797979;
+  border: 1px solid rgb(255, 255, 255);
+  color: #DDD;
+  font-weight: bold;
+}
+
+.boton:hover {
+  background: #fff;
+  border: 1px solid #797979;
+  color: #797979;
+}
+
+.footer {
+  text-align: center;
+  color: darkgray;
+  background: #333;
+  padding: 1rem;
+  position: sticky;
+  bottom: 0;
+}
+
+.error {
+  color: red;
+  border: 0.4vh solid red;
+}
+
+#campo_selecionado-error{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background: red;
+  color: #fff;
+  font-size: 2vh;
+  border-radius: 3vh;
+  margin-left: 14vh;
+  padding: 10px;
+  position: absolute;
+}

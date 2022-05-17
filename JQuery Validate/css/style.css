@@ -1,0 +1,41 @@
+body {
+    background: radial-gradient(rgb(207, 255, 152), rgb(74, 255, 170));
+    padding-top: 100px;
+}
+
+#container {
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background: #fff;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 18px;
+    margin: 0 auto;
+    padding: 30px;
+    width: 350px;
+}
+.campo {
+    border: 4px solid #cece76;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 35px;
+    width: 300px;
+}
+
+.boton {
+    background: #849175;
+    border: solid 0;
+    color: #fff;
+    padding: 10px;
+}
+
+.errores {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background: red;
+    color: #fff;
+    display: none;
+    font-size: 14px;
+    margin-top: -80px;
+    margin-left: 340px;
+    padding: 10px;
+    position: absolute;
+}
